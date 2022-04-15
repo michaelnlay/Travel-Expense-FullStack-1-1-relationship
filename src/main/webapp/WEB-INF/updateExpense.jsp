@@ -26,18 +26,35 @@
 </head>
 <body>
     <div class="container"> <!-- Beginning of Container -->
-    	<h1>Check out this Carnivale Candy!</h1>
+    	<h1>Edit Expense</h1>
+     	
     	<br>
-    		<a href ="/dashboard">Dashboard</a>
-    	<a href ="/newCandy">New Candy</a>
-    	<a href ="/oneCandy">One Candy</a>
-    	<a href ="/updateCandy">Update Candy</a>
     	
-    	${candy.name }
-    	${candy.brand }
-    	${candy.price }
-    	${candy.rating }
+<a class="btn btn-outline-primary" href ="/dashboard">Dashboard</a> <br>
+<br>    	
 
+  	
+<form:form action="/updatingExpense/${travel.id}" method="post" modelAttribute="travel">
+<input type="hidden" name="_method" value="put"/>
+    <p>
+    <!-- Those" expense" are tied to model attributes -->
+        <form:label path="expense">Expense</form:label>
+        <form:errors class="alert-danger" path="expense"/>
+        <form:input path="expense"/>
+    </p>
+    <p>
+        <form:label path="vendor">Vendor</form:label>
+        <form:errors class="alert-danger" path="vendor"/>
+        <form:input path="vendor"/>
+    </p>
+    <p>
+        <form:label path="amount">($) Amount</form:label>
+        <form:errors class="alert-danger" path="amount"/>
+        <form:input type="number" step="0.01" path="amount"/>
+    </p>
+     
+    <input type="submit" value="Update"/>
+</form:form>    
     	
     </div> <!-- End of Container -->
 </body>

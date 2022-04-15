@@ -1,13 +1,13 @@
-package com.ml.fullcrud;
+package com.ml.savetravels;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookAPIApplication {
+public class SaveTravelsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BookAPIApplication.class, args);
+		SpringApplication.run(SaveTravelsApplication.class, args);
 	}
 
 }

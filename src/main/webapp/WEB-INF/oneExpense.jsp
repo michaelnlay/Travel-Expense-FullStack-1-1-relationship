@@ -26,47 +26,18 @@
 </head>
 <body>
     <div class="container"> <!-- Beginning of Container -->
-    
-    	<h1>Save Travels</h1> <br>
-
-    	<a class="btn btn-outline-primary" href ="/newExpense">New Expense</a> <br>
-    
-<br>
-    
-    	<table class ="table table-dark table-striped table-hover">
-    	<thead>
-    		<tr>
-    			<th class"align-middle">Expense</th>
-    			<th class"align-middle">Vendor</th>
-    			<th class"align-middle">($) Amount</th>
-    			<th class"align-middle">Actions</th>
-    		</tr>
-    	</thead>
-    			<tbody>
-    			
-    			<c:forEach var="i" items="${allTravels}">
-    			<tr>
-    				<td> 
-    				<a href ="oneExpense/${i.id }">
-    				<c:out value="${i.expense}"></c:out> 
-    				</a>
-    				</td>
-    				<td> <c:out value="${i.vendor}"></c:out> </td>
-    				<td> <c:out value="${i.amount}"></c:out> </td>
-    				<td>
-    					<a href="/updateExpense/${i.id}">Edit</a>
-    					<a href="/delete/${i.id}">Delete</a>
-    					</td>
+    	<h1>Expense Details</h1>
+    	<br>
+ 
     	
-    			</tr>
-    			</c:forEach>
+    	<a class="btn btn-outline-primary" href ="/dashboard">Dashboard</a> <br>
+    	<br>
     
-    			</tbody>
+   		<h4>Expense Name: ${travel.expense } </h4>
+    	<h4>Vendor: ${travel.vendor } </h4>
+    	<h4> ($) Amount Spent: ${travel.amount }</h4>
     	
-    	
-    	</table> 
-
-    	
+   	
     </div> <!-- End of Container -->
 </body>
 </html>

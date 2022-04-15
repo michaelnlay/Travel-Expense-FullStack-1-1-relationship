@@ -1,4 +1,4 @@
-package com.ml.fullcrud;
+package com.ml.savetravels;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(BookAPIApplication.class);
+		return application.sources(SaveTravelsApplication.class);
 	}
 
 }

@@ -26,41 +26,34 @@
 </head>
 <body>
     <div class="container"> <!-- Beginning of Container -->
-    	<h1>What Candy Will You Bring to the Carnivale?</h1>
+    	<h1>Add an expense:</h1>
     	<br>
-    		<a href ="/dashboard">Dashboard</a>
-    	<a href ="/newCandy">New Candy</a>
-    	<a href ="/oneCandy">One Candy</a>
-    	<a href ="/updateCandy">Update Candy</a>
-    	  
-<h1>New Candy</h1>
+    	<a class="btn btn-outline-primary" href ="/dashboard">Dashboard</a> <br>
+    	<br>
 
-//tied this form to our model class
-<form:form action="/processCandy" method="post" modelAttribute="candy">
+
+<!-- //tied this form to our model class -->
+<form:form action="/processExpense" method="post" modelAttribute="travel">
     <p>
-        <form:label path="name">Name</form:label>
-        <form:errors class="alert-danger" path="name"/>
-        <form:input path="name"/>
+    <!-- Those" expense" are tied to model attributes -->
+        <form:label path="expense">Expense</form:label>
+        <form:errors class="alert-danger" path="expense"/>
+        <form:input path="expense"/>
     </p>
     <p>
-        <form:label path="brand">Brand</form:label>
-        <form:errors class="alert-danger" path="brand"/>
-        <form:textarea path="brand"/>
+        <form:label path="vendor">Vendor</form:label>
+        <form:errors class="alert-danger" path="vendor"/>
+        <form:input path="vendor"/>
     </p>
     <p>
-        <form:label path="price">Price</form:label>
-        <form:errors class="alert-danger" path="price"/>
-        <form:input type="number" path="price"/>
+        <form:label path="amount">($) Amount</form:label>
+        <form:errors class="alert-danger" path="amount"/>
+        <form:input type="number" step="0.01" path="amount"/>
     </p>
-    <p>
-        <form:label path="rating">Rating</form:label>
-        <form:errors class="alert-danger" path="rating"/>     
-        <form:input type="number" path="rating"/>
-    </p>    
+     
     <input type="submit" value="Submit"/>
 </form:form>    
 
-    	
     	
     	
 
