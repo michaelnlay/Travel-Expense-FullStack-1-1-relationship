@@ -1,13 +1,13 @@
-package com.ml.javaspringtemplate;
+package com.ml.fullcrud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JavaSpringTemplateApplication {
+public class BookAPIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JavaSpringTemplateApplication.class, args);
+		SpringApplication.run(BookAPIApplication.class, args);
 	}
 
 }

@@ -52,7 +52,7 @@
 
     <!-- MySQL -->
     <!-- Comment this section in if you are using MySQL! -->
-    <!-- <dependency>
+   <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <scope>runtime</scope>
@@ -60,7 +60,7 @@
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency> --> 
+    </dependency> 
 
     <!--Validations -->
     <dependency>
@@ -74,7 +74,6 @@
         <artifactId>jbcrypt</artifactId>
         <version>0.4</version>
     </dependency>
-    
 </dependencies>
 
 	<build>

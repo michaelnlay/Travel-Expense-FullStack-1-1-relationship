@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Omikuji Form</title>
+<title>Full CRUD</title>
   <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
       rel="stylesheet" 
@@ -26,21 +26,18 @@
 </head>
 <body>
     <div class="container"> <!-- Beginning of Container -->
-    	<h1>Here is your Omikuji :)</h1>
-    	<div class=wrapper>
-	    	<p>In <c:out value="${number}"/> years, you will</p>
-	    	<p>live in <c:out value="${city}"/> with</p>
-	    	<p><c:out value="${person}"/> as your partner, selling</p>
-	    	<p><c:out value="${hobby}"/> for living.</p>
-	    	<p>The next time you see a <c:out value="${animal}"/>, you will </p>
-	    	<p>have good luck.</P>
-	    	<p>Also, <c:out value="${description}"/>.</p>
-    	</div>
+    	<h1>Check out this Carnivale Candy!</h1>
+    	<br>
+    		<a href ="/dashboard">Dashboard</a>
+    	<a href ="/newCandy">New Candy</a>
+    	<a href ="/oneCandy">One Candy</a>
+    	<a href ="/updateCandy">Update Candy</a>
     	
-    
-    	
-    	
- 
+    	${candy.name }
+    	${candy.brand }
+    	${candy.price }
+    	${candy.rating }
+
     	
     </div> <!-- End of Container -->
 </body>
